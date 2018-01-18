@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--måste denna vara med säger vilken version som Microsofts webbläsare ska köra i-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"><!--This means that the browser will (probably) render the width of the page at the width of its own screen. So if that screen is 320px wide, the browser window will be 320px wide, rather than way zoomed out and showing 960px-->
+        <title>Vault Hotell _ Boka</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/mystyles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <a class="navbar-brand" href="#">Vault HotelL</a>
+              </div>
+              <ul class="nav navbar-nav">
+                  <li><a href="index.html">Start</a></li>
+                  <li class="active"><a href="boka.html">Boka</a></li>
+                  <li><a href="hitta.html">Hitta</a></li>
+                  <li><a href="kontakta.html">Kontakta</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+  </ul>
+          </div>
+      </nav>
+        <!-- http://www.w3schools.com/bootstrap/bootstrap_forms.asp -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-6">
+                        <h3>Boka Hotellrum <span class="glyphicon glyphicon-envelope"></span></h3>
+                    </div>
+                </div>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="namn">Namn</label>
+                        <div class="col-sm-6">
+                          <span class="input-group-addon"><i class='glyphicon glyphicon-user'></i></span>
+                            <input type="email" class="form-control" id="namn" placeholder="Namn">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="email">Mail address</label>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" id="email" placeholder="Mail">
+                          </div>
+                        </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="ps">Personnummer</label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="ps" placeholder="Personnummer" data-toggle='popover' data-content='Var noga med att sätta in korrekt personnummer' data-trigger='hover'>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="antalpers">Antal personer</label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="antalpers" placeholder="Antal personer">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-sm-4" for="vip">VIP delux edition (extra kostnad)</label>
+                            <div class="col-sm-6">
+
+                                <select class="form-control" id="vip" data-toggle='popover' data-content='Extra kostnad: 1000kr' data-trigger='hover'>
+                                    <option>Ja</option>
+                                    <option>Nej</option>
+
+                                </select>
+                              </div>
+                            </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="rooms">Antal rum:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control" id="rooms" data-toggle='popover' data-content='500kr per rum' data-trigger='hover'>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-4 col-sm-6">
+                            <button type="submit" class="btn btn-default">Skicka</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <footer class="navbar-fixed-bottom text-center"><p>Adress | 123 45 Bärsgatan</p></footer>
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+});
+</script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+/* http://paletton.com/#uid=13L0u0kkulP6ou0dmpUrIhNEfdN */
+
+.navbar {
+    background-color: #ffff00;
+
+}
+
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+
+.navbar-nav li a:hover {
+    color: #051A4A!important;
+    background-color: #bbb !important;
+}
+
+.navbar-nav li.active a {
+    color: #000000!important;
+    background-color: #fff !important;
+}
+
+.navbar-default {
+    color: #fff !important;
+}
+
+iframe{
+    width: 95%;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+
+footer{
+    background-color: #ffff00;
+    height: 3%;
+    color: white;
+}
